@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM To-Do List</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- College Logo -->
+            <img src="srm-logo.png" alt="SRM Logo" class="college-logo">
+            <h1>SRM To-Do List</h1>
+            
+            <!-- Course Selection -->
+            <div class="dropdown-section">
+                <label for="courseSelect">Select Course:</label>
+                <select id="courseSelect">
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="CSE">CSE Core</option>
+                </select>
+            </div>
+
+            <!-- Batch Selection -->
+            <div class="dropdown-section">
+                <label for="batchSelect">Select Batch:</label>
+                <select id="batchSelect" disabled>
+                    <option value="" disabled selected>Select Batch</option>
+                    <option value="batch1">CSE Core Batch 1</option>
+                    <option value="batch2">CSE Core Batch 2</option>
+                </select>
+            </div>
+
+            <!-- Subjects List -->
+            <div class="subjects-container" id="subjectsContainer" style="display: none;">
+                <h2>Subjects</h2>
+                <div id="subjectsList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
